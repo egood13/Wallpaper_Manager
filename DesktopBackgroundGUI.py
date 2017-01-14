@@ -15,7 +15,6 @@ class ExampleApp(tk.Tk):
         b2.pack(in_=toolbar, side="left")
         self.text = tk.Text(self, wrap="word")
         self.text.pack(side="top", fill="both", expand=True)
-        self.text.tag_configure("stderr", foreground="#b22222")
 
         sys.stdout = TextRedirector(self.text)
 
